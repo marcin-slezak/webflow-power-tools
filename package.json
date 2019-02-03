@@ -1,0 +1,62 @@
+{
+  "name": "webflow-power-tools",
+  "version": "0.0.0",
+  "author": "marcin-slezak @marcin-slezak",
+  "bin": {
+    "webflow-power-tools": "./bin/run"
+  },
+  "bugs": "https://github.com/marcin-slezak/webflow-power-tools/issues",
+  "dependencies": {
+    "@oclif/command": "^1.5.8",
+    "@oclif/config": "^1.12.4",
+    "@oclif/plugin-help": "^2.1.6",
+    "chromedriver": "^2.45.0",
+    "cli-ux": "^5.0.0",
+    "listr": "^0.14.3",
+    "selenium-webdriver": "^4.0.0-alpha.1",
+    "unzipper": "^0.9.10",
+    "uuid": "^3.3.2",
+    "wait-on": "^3.2.0"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1.21.0",
+    "@oclif/test": "^1.2.2",
+    "chai": "^4.2.0",
+    "eslint": "^5.11.1",
+    "eslint-config-oclif": "^3.1.0",
+    "globby": "^8.0.2",
+    "mocha": "^5.2.0",
+    "nyc": "^13.1.0",
+    "rimraf": "^2.6.3"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json",
+    "/src"
+  ],
+  "homepage": "https://github.com/marcin-slezak/webflow-power-tools",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "oclif": {
+    "commands": "./src/commands",
+    "bin": "webflow-power-tools",
+    "plugins": [
+      "@oclif/plugin-help"
+    ]
+  },
+  "repository": "marcin-slezak/webflow-power-tools",
+  "scripts": {
+    "postpack": "rimraf oclif.manifest.json",
+    "posttest": "eslint .",
+    "prepack": "oclif-dev manifest && oclif-dev readme",
+    "test": "nyc mocha --forbid-only \"test/**/*.test.js\"",
+    "version": "oclif-dev readme && git add README.md"
+  }
+}
