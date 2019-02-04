@@ -1,7 +1,7 @@
 {
   "name": "webflow-power-tools",
   "version": "0.0.0",
-  "author": "marcin-slezak @marcin-slezak",
+  "author": "marcin-slezak@wingedcode.com",
   "bin": {
     "webflow-power-tools": "./bin/run"
   },
