@@ -1,33 +1,33 @@
-webflow-power-tools
-===================
+webflow-power-tools: Automate repetitive, monotone operations on Webflow
+==============================================
 
-Diff of 2 exported webflow projects
 
-<!-- tocstop -->
-# Usage
-<!-- usage -->
+# 🗒 Description
+
+This is a unoficial set of CLIs tools for Webflow. It helps to automate repetitive, monotone operations. We use mostly selenium webdriver to interact with Webflow service. 
+
+This tool was built on the top of [The Open CLI Framework](https://oclif.io/).
+
+# 🚀 Getting Started Tutorial
+
+## Instalation  
 ```sh-session
 $ npm install -g webflow-power-tools
-$ webflow-power-tools COMMAND
-running command...
-$ webflow-power-tools (-v|--version|version)
-webflow-power-tools/0.0.0 win32-x64 node-v8.9.4
-$ webflow-power-tools --help [COMMAND]
-USAGE
-  $ webflow-power-tools COMMAND
-...
 ```
-<!-- usagestop -->
-# Commands
-<!-- commands -->
-* `webflow-power-tools diff`
-* `webflow-power-tools diff project_1 project_2 -u username -p password`
+## Usage
+```sh-session
+$ webflow-power-tools COMMAND
+```
+## Commands
+* `webflow-power-tools diff` - diff of two exported projects
+
+# 📌 Requirements
+- Node 8+
+- Meld
 
 
-Powered by oclif
-----------------
+# 📣 Feedback
 
-Created by Marcin Ślęzak
-------------------------
+If you have any suggestions, wishlist or just want to let us know what you think of webflow-power-tools, send  message at <marcin@wingedcode.com>
 
 
